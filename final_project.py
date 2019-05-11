@@ -25,7 +25,7 @@ cv2.imwrite("Edge_E.png", edge_E)
 background = cv2.imread("Castle.png")
 overlay = cv2.imread("Edge_E.png")
 
-result = cv2.addWeighted(background,0.4,overlay,0.1,0)
+result = cv2.addWeighted(background,1,overlay,0.1,0)
 
 cv2.imwrite("Highlighted.png", result)
 
